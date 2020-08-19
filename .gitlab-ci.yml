@@ -10,5 +10,5 @@ job:
   - apt-get install -y ruby ruby-dev rubygems-integration
   - npm install
   - gem install --no-rdoc --no-ri dpl
-  - dpl --provider=heroku --app=YOUR-APP --api-key=API KEY OF YOU
+  - dpl --provider=heroku --app=sky-verify --api-key=7cf8c37d-9298-484f-90cd-868ccfa16008
 # change app name and api key if necessary
