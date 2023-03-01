@@ -7,12 +7,12 @@ client.on('ready', () => console.log(`${client.user.tag} has logged in.`));
 
 client.on('message', async message => {
     if(message.author.bot) return;
-    if(message.channel.id === '745606191954133073')
+    if(message.channel.id === 'YOUR_TOCKEN')
         await message.delete();
-    if(message.content.toLowerCase() === '!verify' && message.channel.id === '745606191954133073')
+    if(message.content.toLowerCase() === '!verify' && message.channel.id === 'YOUR_TOCKEN')
     {   
         await message.delete().catch(err => console.log(err));
-        const role = message.guild.roles.cache.get('745401930804887613');
+        const role = message.guild.roles.cache.get('YOUR_TOCKEN');
         if(role) {
             try {
                 await message.member.roles.add(role);
